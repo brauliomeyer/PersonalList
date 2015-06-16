@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="plunker">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FruitPriceCalculator</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/app.css">
+    
+    <!-- JS Files -->
+    <script type="text/javascript" src="js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/angular/angular.js"></script>
+    <!-- <script type="text/javascript" src="js/angular/angular.min.js.map"></script> -->
+    <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body>
+      <div class="blog-masthead">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="#">Home</a>
+          <a class="blog-nav-item" href="#">New features</a>
+          <a class="blog-nav-item" href="#">Press</a>
+          <a class="blog-nav-item" href="#">New hires</a>
+          <a class="blog-nav-item" href="#">About</a>
+        </nav>
+    </div>
+
+    <div ng-controller="MainCtrl" class="container">
+
+        <div ng-controller="ListCtrl">
+            <p>{{title_app}}</p>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <div myname="myname" listdata mydata="items"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div myname="myname" listdata mydata="projects"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div myname="myname" listdata mydata="tasks"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div myname="myname" listdata mydata="appointments"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div myname="myname" listdata mydata="date"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+   </div><!-- /.container -->
+    
+
+</body>
+</html>
